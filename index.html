@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Abid Hussain | Bioinformatics Portfolio</title>
+  <title>Abid Hussain | Bioinformatics & AI</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Lato&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- 1. HERO -->
-<section id="hero">
-  <h1>Abid Hussain</h1>
-  <p>Bioinformatics • AI/ML • Data Science</p>
-  <div class="buttons">
-    <a href="#projects">View Projects</a>
-    <a href="cv.pdf" target="_blank">Download CV</a>
-  </div>
-</section>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">Abid<span>.</span></div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-<!-- 2. ABOUT -->
-<section id="about">
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-content">
+    <h1>Bioinformatics.<br>AI & Data Science.</h1>
+    <p>Building intelligent systems for healthcare, genomics, and diagnostics.</p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="cv.pdf" target="_blank" class="btn secondary">Download CV</a>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="section reveal">
   <h2>About Me</h2>
-  <div class="about-flex">
-    <img src="assets/profile.jpg" alt="Profile Photo">
+  <div class="about-grid">
+    <img src="assets/profile.jpg" alt="Abid Hussain">
     <p>
       I am a Bioinformatics undergraduate at NUST with strong foundations in biology,
-      machine learning, and data analysis. My interests include genomics, medical diagnostics,
-      AI-driven healthcare, and computational biology.
+      machine learning, and data analysis. My interests include genomics, AI-driven
+      healthcare, and computational biology.
     </p>
   </div>
 </section>
 
-<!-- 3. SKILLS -->
-<section id="skills">
-  <h2>Technical Skills</h2>
-  <ul>
-    <li><strong>Machine Learning:</strong> CNNs, XGBoost, Random Forest, PyTorch, SHAP, CTGAN</li>
-    <li><strong>Data Analysis:</strong> Pandas, NumPy, EDA, Visualization</li>
-    <li><strong>Bioinformatics:</strong> BLAST, BWA-MEM, FastQC, Galaxy, Variant Calling</li>
-    <li><strong>Big Data:</strong> Hadoop, Spark</li>
-    <li><strong>Web:</strong> HTML, CSS, Streamlit, Flutter</li>
-  </ul>
+<!-- SKILLS -->
+<section id="skills" class="section dark reveal">
+  <h2>Technical Expertise</h2>
+  <div class="skills-grid">
+    <div class="skill-card">Machine Learning & Deep Learning</div>
+    <div class="skill-card">Bioinformatics Pipelines</div>
+    <div class="skill-card">Data Analysis & Visualization</div>
+    <div class="skill-card">Big Data (Hadoop, Spark)</div>
+    <div class="skill-card">Scientific Programming</div>
+    <div class="skill-card">Web & App Prototyping</div>
+  </div>
 </section>
 
-<!-- 4. EXPERIENCE -->
-<section id="experience">
-  <h2>Experience</h2>
-  <h3>Research Intern – BIOMISA Lab</h3>
-  <p>
-    Developed ML pipelines for thalassemia prediction using CBC data.
-    Built Streamlit applications and optimized XGBoost models with SHAP analysis.
-  </p>
-</section>
+
 
 <!-- 5. PROJECTS -->
 <section id="projects">
@@ -217,42 +224,28 @@
 </section>
 
 
-<!-- 6. RESEARCH -->
-<section id="research">
+<!-- RESEARCH -->
+<section id="research" class="section dark reveal">
   <h2>Research Interests</h2>
-  <p>Medical diagnostics, genomics, multi-omics analysis, AI healthcare</p>
+  <p class="center">
+    Medical Diagnostics • Genomics • Multi-omics • AI for Healthcare
+  </p>
 </section>
 
-<!-- 7. EDUCATION -->
-<section id="education">
-  <h2>Education</h2>
-  <p><strong>BS Bioinformatics</strong> – NUST (2023–Present)</p>
-</section>
-
-<!-- 8. CERTIFICATIONS -->
-<section id="certifications">
-  <h2>Certifications</h2>
-  <p>To be added</p>
-</section>
-
-<!-- 9. PUBLICATIONS -->
-<section id="publications">
-  <h2>Publications</h2>
-  <p>In preparation</p>
-</section>
-
-<!-- 10. CONTACT -->
-<section id="contact">
+<!-- CONTACT -->
+<section id="contact" class="section reveal">
   <h2>Contact</h2>
-  <p>Email: abid.qumber@gmail.com</p>
-  <p>LinkedIn: linkedin.com/in/abidhussainbalti</p>
+  <p class="center">
+    📧 abid.qumber@gmail.com <br>
+    🔗 linkedin.com/in/abidhussainbalti
+  </p>
 </section>
 
-<!-- 11. FOOTER -->
 <footer>
-  <p>© 2026 Abid Hussain</p>
+  © 2026 Abid Hussain
 </footer>
 
-<script src="scripts.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
+
