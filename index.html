@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
@@ -41,7 +41,7 @@
 <section id="about" class="section reveal">
   <h2>About Me</h2>
   <div class="about-grid">
-    <img src="assets/profile.jpg" alt="Abid Hussain">
+    <img src="./assets/profile.jpg" alt="Abid Hussain">
     <p>
       I am a Bioinformatics undergraduate at NUST with strong foundations in biology,
       machine learning, and data analysis. My interests include genomics, AI-driven
@@ -63,166 +63,83 @@
   </div>
 </section>
 
-
-
-<!-- 5. PROJECTS -->
-<section id="projects">
+<!-- PROJECTS -->
+<section id="projects" class="section reveal">
   <h2>Projects</h2>
 
-  <!-- PROJECT 1 -->
-  <div class="project">
-    <img src="assets/project1.png" alt="Brain Tumor Detection">
-    <h3>Brain Tumor Detection Using Deep Neural Networks</h3>
-    <p><strong>Dates:</strong> November 2025 – December 2025</p>
-
-    <p><strong>Description / Problem & Solution:</strong><br>
-      Developed an end-to-end deep learning pipeline to classify brain tumors from MRI scans
-      into four categories: Glioma, Meningioma, Pituitary, and No Tumor. MRI images were
-      preprocessed using resizing, normalization, and tensor conversion. A fully connected
-      deep neural network with ReLU activations was trained for 100 epochs using
-      CrossEntropyLoss and Adam optimizer on GPU. Model performance was evaluated using
-      accuracy, precision, recall, F1-score, confusion matrix, and ROC-AUC.
-    </p>
-
-    <p><strong>Tools / Technologies:</strong>
-      Python, PyTorch, NumPy, Pandas, Matplotlib
-    </p>
-
-    <p><strong>Outcome / Impact:</strong>
-      Achieved high accuracy and reliable tumor classification. The pipeline is reproducible
-      and adaptable for similar medical imaging tasks and is ready for integration into a
-      diagnostic aid system.
-    </p>
-
-    <p><strong>Image Placeholder:</strong>
-      MRI scan + model architecture visualization
-    </p>
-
-    <a href="https://github.com/dummy-link" target="_blank">GitHub Repository</a>
+  <div class="project-card">
+    <img src="./assets/project1.png" alt="Brain Tumor Detection">
+    <div>
+      <h3>Brain Tumor Detection Using Deep Neural Networks</h3>
+      <p><strong>Dates:</strong> November 2025 – December 2025</p>
+      <p><strong>Description / Problem & Solution:</strong><br>
+        Developed an end-to-end deep learning pipeline to classify brain tumors from MRI scans
+        into four categories: Glioma, Meningioma, Pituitary, and No Tumor. MRI images were
+        preprocessed using resizing, normalization, and tensor conversion. A fully connected
+        deep neural network with ReLU activations was trained for 100 epochs using
+        CrossEntropyLoss and Adam optimizer on GPU. Model performance was evaluated using
+        accuracy, precision, recall, F1-score, confusion matrix, and ROC-AUC.
+      </p>
+      <p><strong>Tools / Technologies:</strong> Python, PyTorch, NumPy, Pandas, Matplotlib</p>
+      <p><strong>Outcome / Impact:</strong>
+        Achieved high accuracy and reliable tumor classification. The pipeline is reproducible
+        and adaptable for similar medical imaging tasks and is ready for integration into a
+        diagnostic aid system.
+      </p>
+      <p><strong>Image Placeholder:</strong> MRI scan + model architecture visualization</p>
+      <a href="https://github.com/dummy-link" target="_blank">GitHub Repository →</a>
+    </div>
   </div>
 
-  <!-- PROJECT 2 -->
-  <div class="project">
-    <img src="assets/project2.png" alt="Variant Calling">
-    <h3>Variant Calling and Mutation Analysis</h3>
-    <p><strong>Dates:</strong> November 2025 – December 2025</p>
-
-    <p><strong>Description / Problem & Solution:</strong><br>
-      Designed a reproducible variant calling workflow to analyze human genomic data.
-      Processed FASTQ files from NCBI SRA and aligned reads to the HBB reference genome using
-      FastQC and BWA-MEM. Identified SNPs and small indels using BCFtools with high-confidence
-      filtering. Conducted comparative variant analysis in Python and generated summary
-      tables and visualizations.
-    </p>
-
-    <p><strong>Tools / Technologies:</strong>
-      Galaxy, Python, FastQC, BWA-MEM, BCFtools, Pandas, Matplotlib
-    </p>
-
-    <p><strong>Outcome / Impact:</strong>
-      Developed a reproducible pipeline for variant identification and generated actionable
-      insights on mutations in the HBB gene. Ready for integration into broader genomics
-      research workflows.
-    </p>
-
-    <p><strong>Image Placeholder:</strong>
-      Variant calling workflow diagram / summary visualization
-    </p>
-
-    <a href="https://github.com/dummy-link" target="_blank">GitHub Repository</a>
+  <div class="project-card">
+    <img src="./assets/project2.png" alt="Variant Calling">
+    <div>
+      <h3>Variant Calling and Mutation Analysis</h3>
+      <p><strong>Dates:</strong> November 2025 – December 2025</p>
+      <p><strong>Description / Problem & Solution:</strong><br>
+        Designed a reproducible variant calling workflow to analyze human genomic data.
+        Processed FASTQ files from NCBI SRA and aligned reads to the HBB reference genome using
+        FastQC and BWA-MEM. Identified SNPs and small indels using BCFtools with high-confidence
+        filtering. Conducted comparative variant analysis in Python and generated summary
+        tables and visualizations.
+      </p>
+      <p><strong>Tools / Technologies:</strong>
+        Galaxy, Python, FastQC, BWA-MEM, BCFtools, Pandas, Matplotlib
+      </p>
+      <p><strong>Outcome / Impact:</strong>
+        Developed a reproducible pipeline for variant identification and generated actionable
+        insights on mutations in the HBB gene. Ready for integration into broader genomics
+        research workflows.
+      </p>
+      <p><strong>Image Placeholder:</strong> Variant calling workflow diagram / summary visualization</p>
+      <a href="https://github.com/dummy-link" target="_blank">GitHub Repository →</a>
+    </div>
   </div>
 
-  <!-- PROJECT 3 -->
-  <div class="project">
-    <img src="assets/project3.png" alt="Protein Evolution">
-    <h3>Protein Evolution Analysis</h3>
-    <p><strong>Dates:</strong> December 2024 – January 2025</p>
-
-    <p><strong>Description / Problem & Solution:</strong><br>
-      Compared cytochrome protein sequences across five species to study evolutionary
-      relationships. Performed multiple sequence alignment using Clustal Omega and constructed
-      a phylogenetic tree to visualize evolutionary divergence. Conducted in-depth analysis of
-      sequence similarity and functional conservation.
-    </p>
-
-    <p><strong>Tools / Technologies:</strong>
-      Clustal Omega, MEGA, Python, Jalview, Phylogenetics tools
-    </p>
-
-    <p><strong>Outcome / Impact:</strong>
-      Created a reproducible workflow for protein evolution analysis and generated
-      phylogenetic insights into cytochrome protein conservation with clear visualizations.
-    </p>
-
-    <p><strong>Image Placeholder:</strong>
-      Phylogenetic tree / sequence alignment screenshot
-    </p>
-
-    <a href="https://github.com/dummy-link" target="_blank">GitHub Repository</a>
-  </div>
-
-  <!-- PROJECT 4 -->
-  <div class="project">
-    <img src="assets/project4.png" alt="OpenSim Analysis">
-    <h3>OpenSim Biomechanical Analysis</h3>
-    <p><strong>Dates:</strong> November 2025 – December 2025</p>
-
-    <p><strong>Description / Problem & Solution:</strong><br>
-      Recorded motion data using OpenCap and analyzed it in OpenSim to study joint movements.
-      Performed inverse kinematics to evaluate knee extension and muscle activation patterns.
-      Generated visualizations of biomechanical data to understand human motion and assess
-      musculoskeletal function.
-    </p>
-
-    <p><strong>Tools / Technologies:</strong>
-      OpenSim, OpenCap, Python, Motion Capture tools
-    </p>
-
-    <p><strong>Outcome / Impact:</strong>
-      Developed a reproducible workflow for biomechanical analysis and provided insights into
-      knee movement and muscle activation patterns useful for rehabilitation research.
-    </p>
-
-    <p><strong>Image Placeholder:</strong>
-      Motion analysis / OpenSim model screenshot
-    </p>
-
-    <a href="https://github.com/dummy-link" target="_blank">GitHub Repository</a>
-  </div>
-
-  <!-- PROJECT 5 -->
-  <div class="project">
-    <img src="assets/project5.png" alt="RTOS RISC-V">
-    <h3>RTOS Implementation on RISC-V using Zephyr</h3>
-    <p><strong>Dates:</strong> April 2025 – May 2025</p>
-
-    <p><strong>Description / Problem & Solution:</strong><br>
-      Deployed a Zephyr RTOS environment on a QEMU-emulated RISC-V platform. Implemented a
-      producer–consumer inter-process communication system using kernel threads and message
-      queues. Applied multitasking, preemptive scheduling, synchronization, and deterministic
-      memory management. Built the project using Zephyr SDK, west build system, CMake, and
-      RISC-V GCC toolchain. Execution was validated via QEMU console output.
-    </p>
-
-    <p><strong>Tools / Technologies:</strong>
-      Zephyr RTOS, QEMU, CMake, RISC-V GCC, Linux
-    </p>
-
-    <p><strong>Outcome / Impact:</strong>
-      Developed a fully functional RTOS environment on RISC-V, demonstrated advanced
-      multitasking and synchronization techniques, and maintained the project on GitHub for
-      reproducibility.
-    </p>
-
-    <p><strong>Image Placeholder:</strong>
-      RTOS console output / RISC-V emulation screenshot
-    </p>
-
-    <a href="https://github.com/dummy-link" target="_blank">GitHub Repository</a>
+  <div class="project-card">
+    <img src="./assets/project3.png" alt="Protein Evolution">
+    <div>
+      <h3>Protein Evolution Analysis</h3>
+      <p><strong>Dates:</strong> December 2024 – January 2025</p>
+      <p><strong>Description / Problem & Solution:</strong><br>
+        Compared cytochrome protein sequences across five species to study evolutionary
+        relationships. Performed multiple sequence alignment using Clustal Omega and constructed
+        a phylogenetic tree to visualize evolutionary divergence. Conducted in-depth analysis of
+        sequence similarity and functional conservation.
+      </p>
+      <p><strong>Tools / Technologies:</strong>
+        Clustal Omega, MEGA, Python, Jalview, Phylogenetics tools
+      </p>
+      <p><strong>Outcome / Impact:</strong>
+        Created a reproducible workflow for protein evolution analysis and generated
+        phylogenetic insights into cytochrome protein conservation with clear visualizations.
+      </p>
+      <p><strong>Image Placeholder:</strong> Phylogenetic tree / sequence alignment screenshot</p>
+      <a href="https://github.com/dummy-link" target="_blank">GitHub Repository →</a>
+    </div>
   </div>
 
 </section>
-
 
 <!-- RESEARCH -->
 <section id="research" class="section dark reveal">
@@ -245,7 +162,6 @@
   © 2026 Abid Hussain
 </footer>
 
-<script src="js/main.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
-
